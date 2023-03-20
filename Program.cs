@@ -1,19 +1,19 @@
 ﻿//ARRAY BONUS
-Prodotto[] productList = new Prodotto[3];
+Prodotto[] array = new Prodotto[3];
 
-productList[0] = new Prodotto("Giacca", "Giacca nera in vera pelle", 79.99, 22);
-productList[1] = new Prodotto("Sneakers", "Sneakers Nike colore bianco", 49.99, 22);
-productList[2] = new Prodotto("Jeans", "Jeans colore blu scuro", 39.99, 22);
+array[0] = new Prodotto("Giacca", "Giacca nera in vera pelle", 79.99, 22);
+array[1] = new Prodotto("Sneakers", "Sneakers Nike colore bianco", 49.99, 22);
+array[2] = new Prodotto("Jeans", "Jeans colore blu scuro", 39.99, 22);
 
-Console.WriteLine("Elenco prodotti nel negozio:");
+Console.WriteLine("Ecco i prodotti nel negozio");
 Console.WriteLine();
 
-foreach (Prodotto product in productList)
+foreach (Prodotto obj in array)
 {
-    Console.WriteLine("Codice prodotto: " + product.GetProductCode());
-    Console.WriteLine("Nome esteso: " + product.GetNomeEsteso());
-    Console.WriteLine("Prezzo base: " + product.GetPrezzoBase() + " euro");
-    Console.WriteLine("Prezzo ivato: " + product.GetPrezzoIva() + " euro");
+    Console.WriteLine("Codice prodotto: " + obj.GetProductCode());
+    Console.WriteLine("Nome esteso: " + obj.GetNomeEsteso());
+    Console.WriteLine("Prezzo base: " + obj.GetPrezzoBase() + " euro");
+    Console.WriteLine("Prezzo ivato: " + obj.GetPrezzoIva() + " euro");
 
     Console.WriteLine();
 
