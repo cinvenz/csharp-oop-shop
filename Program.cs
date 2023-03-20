@@ -5,8 +5,7 @@ array[0] = new Prodotto("Giacca", "Giacca nera in vera pelle", 79.99, 22);
 array[1] = new Prodotto("Sneakers", "Sneakers Nike colore bianco", 49.99, 22);
 array[2] = new Prodotto("Jeans", "Jeans colore blu scuro", 39.99, 22);
 
-Console.WriteLine("Ecco i prodotti nel negozio");
-Console.WriteLine();
+Console.WriteLine("Ecco i prodotti nel negozio:");
 
 foreach (Prodotto obj in array)
 {
