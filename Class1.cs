@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Prodotto
+class Prodotto 
 {
     private int productCode;
     private string name;
