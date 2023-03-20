@@ -6,8 +6,8 @@ Console.WriteLine("Codice prodotto: " + prodotto.GetProductCode());
 
 Console.WriteLine("Nome esteso: " + prodotto.GetNomeEsteso());
 
-Console.WriteLine("Prezzo base: " + prodotto.GetPrezzoBase());
-Console.WriteLine("Prezzo ivato: " + prodotto.GetPrezzoIva());
+Console.WriteLine("Prezzo base: " + prodotto.GetPrezzoBase() + " euro");
+Console.WriteLine("Prezzo ivato: " + prodotto.GetPrezzoIva() + " euro");
 
 Console.WriteLine();
 //secondo PRODOTTO
@@ -18,5 +18,5 @@ Console.WriteLine("Codice prodotto: " + prodotto2.GetProductCode());
 
 Console.WriteLine("Nome esteso: " + prodotto2.GetNomeEsteso());
 
-Console.WriteLine("Prezzo base: " + prodotto2.GetPrezzoBase());
-Console.WriteLine("Prezzo ivato: " + prodotto2.GetPrezzoIva());
+Console.WriteLine("Prezzo base: " + prodotto2.GetPrezzoBase() + " euro");
+Console.WriteLine("Prezzo ivato: " + prodotto2.GetPrezzoIva() + " euro");

@@ -6,9 +6,9 @@ class Prodotto
     private string name;
     private string description;
     private double price;
-    private int piva;
+    private double piva;
 
-    public Prodotto(string name, string description, double price, int piva)
+    public Prodotto(string name, string description, double price, double piva)
     {
         this.productCode = new Random().Next(0, 9999999);
         this.name = name;
@@ -46,7 +46,7 @@ class Prodotto
     public double Piva
     {
         get { return piva; }
-        set { piva = (int)value; }
+        set { piva = value; }
     }
 
     public string GetProductCode()
@@ -67,7 +67,8 @@ class Prodotto
 
     public double GetPrezzoIva()
     {
-        return price + price * piva / 100;
+        double prezzoIva = price + price * piva / 100;
+        return Math.Round(prezzoIva, 2);
     }
 
     public string GetNomeEsteso()
